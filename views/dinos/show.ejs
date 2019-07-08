@@ -1,0 +1,13 @@
+<h2><%= dino.name %></h2>
+<a href="/dinosaurs"> BACK TO DINOS</a>
+<p>This dinosaur is a good dinosaur and it is a <%= dino.type %></p>
+
+<a href="/dinosaurs/<%= dino.id%>/edit">EDIT THIS DINO</a>
+
+<br>
+<br>
+
+
+<form method="POST" action="/dinosaurs/<%= dino.id%>/?_method=DELETE">
+    <input type="submit" value="EXTINCTION">
+</form>

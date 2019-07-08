@@ -1,0 +1,8 @@
+<h3>These are ALL of the dinos that we can GET</h3>
+
+    <% dinos.forEach( function(dino) {%>
+        <li><a href="/dinosaurs/<%= dino.id %>"> <%= dino.name %> is a <%= dino.type %> </a></li>    
+    <% }); %>
+
+
+<h4><a href="/dinosaurs/new">ADD A NEW DINO!</a></h4>
